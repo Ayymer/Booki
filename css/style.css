@@ -159,28 +159,35 @@ header nav ul li a:hover{
 }
 
 
-.hébergements-à-marseille{
+.box-hebergement{
     background-color: #F2F2F2;
     border-radius: 15px;
     margin: 0;
     padding: 30px;
+    width: 65%;
 }
 
-.hébergements-à-marseille .afficher{
+.populaires{
+    width: 30%;
+}
+
+.box-hebergement .afficher{
     text-decoration: none;
     color: black;
     cursor: pointer;
     font-weight: 800;
+    font-size: 125%;
 }
 
-.hébergements{
+
+.hebergements{
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card-list{
+.liste-hebergement{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -188,11 +195,19 @@ header nav ul li a:hover{
     column-gap: 30px;
     margin-bottom: 30px;
     list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 10px;
+    padding-inline-start: 0px;
 }
 
 .card{
-    min-width: 190px;
     font-size: 90%;
+    width: 30%;    
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .card a{
@@ -200,8 +215,6 @@ header nav ul li a:hover{
     background-color: #FFFFFF;
     box-shadow: rgba(117, 117, 117, 0.2) 0px 5px 30px 0px;
     overflow: hidden;
-    display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
@@ -209,18 +222,17 @@ header nav ul li a:hover{
     color: black;
 } 
 
-.hébergements{
+.hebergements{
     width: 100%;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
 }
 
 .card-photo img{
-    height: 120px;
-    width: 350px;
-    min-width: 100%;
-    max-width: 100px;
-    max-height: 100%;
+    height: 179px;
+    width: 100%;
     object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card-content{
@@ -234,7 +246,7 @@ header nav ul li a:hover{
     color: #0065FC!important;
 }
 
-.étoiles{
+.etoiles{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -242,10 +254,71 @@ header nav ul li a:hover{
     list-style-type:none;
 }
   
-.étoiles li {
+.etoiles li {
     height: 12px;
     width: 12px;
     margin-right: 3px;
     color: #F2F2F2;
 }
+
+h4.card-title{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+
+.box-populaires{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin: 0;
+    padding: 30px;
+    width: 25%;
+}
+
+
+
+.liste-populaire{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.card-populaire{
+    display: flex;
+    align-self: flex-start;
+}
+
+.card-photo-populaire{
+    
+}
+
+.card-content-populaire{
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.card-photo-populaire img{
+    height: 179px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+.card-populaire a{
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+} 
+
+
+
+
+
+
 
