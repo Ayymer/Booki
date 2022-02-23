@@ -63,7 +63,7 @@ header nav ul li a:hover{
     justify-content: start;
     align-items: center;
     flex-wrap: nowrap;
-    height: 40px;
+    height: 50px;
     max-width: 330px;
     margin: 0;
     margin-bottom: 15px;
@@ -101,7 +101,7 @@ header nav ul li a:hover{
     color: #F2F2F2;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    height: 40px;
+    height: 50px;
     max-width: 300px;
     background-color: #0065FC;
     border: 0px;
@@ -130,7 +130,7 @@ header nav ul li a:hover{
     display: flex;
     align-items: center;
     box-shadow: inset 0px 0px 0px 2px #f2f2f2;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px 15px;
     margin-left: 0;
     font-weight: 800;
@@ -145,10 +145,9 @@ header nav ul li a:hover{
 
 .filtres .fa-solid{
     position: relative;
-    padding: 0 20px;
-    line-height: 40px;
+    padding: 15px;
     white-space: nowrap;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #DEEBFF;
     color: #0065FC;
 }
@@ -158,6 +157,12 @@ header nav ul li a:hover{
     cursor: pointer;
 }
 
+.fa.fa-circle-info{
+    color: white;
+    background: #0065FC;
+    border: 1px gray solid;
+    border-radius: 20px;
+}
 
 .box-hebergement{
     background-color: #F2F2F2;
@@ -195,11 +200,6 @@ header nav ul li a:hover{
     column-gap: 30px;
     margin-bottom: 30px;
     list-style-type: none;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 10px;
-    padding-inline-start: 0px;
 }
 
 .card{
@@ -229,7 +229,7 @@ header nav ul li a:hover{
 }
 
 .card-photo img{
-    height: 179px;
+    height: 150px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -240,6 +240,14 @@ header nav ul li a:hover{
     flex-direction: column;
     padding: 10px 15px;
     background-color: #FFFFFF;
+}
+
+.card-content p, ul{
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .remplie{
@@ -269,9 +277,6 @@ h4.card-title{
     font-weight: bold;
 }
 
-
-
-
 .box-populaires{
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -280,21 +285,19 @@ h4.card-title{
     width: 25%;
 }
 
-
-
-.liste-populaire{
+.box-populaires h2{
     display: flex;
-    flex-direction: column;
-    list-style-type: none;
+    justify-content: space-between;
 }
+
+.liste-populaire a{
+    display: flex;
+}
+
 
 .card-populaire{
     display: flex;
-    align-self: flex-start;
-}
-
-.card-photo-populaire{
-    
+    margin-bottom: 10%;
 }
 
 .card-content-populaire{
@@ -304,11 +307,11 @@ h4.card-title{
 }
 
 .card-photo-populaire img{
-    height: 179px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
-
-
 
 .card-populaire a{
     overflow: hidden;
@@ -318,7 +321,32 @@ h4.card-title{
 
 
 
+.liste-activites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
 
 
+.card-activites-row1 .card-photo-activites img{
+    height: 400px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
 
+.card-activites-row2 .card-photo-activites img{
+    height: 200px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
 
+.card-activites-row2{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
