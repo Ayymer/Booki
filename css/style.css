@@ -212,7 +212,7 @@ header nav ul li a:hover{
     width: 30%;    
     padding: 5px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 23px;
 }
 
 .card a{
@@ -302,6 +302,10 @@ h4{
 .card-populaire{
     display: flex;
     margin-bottom: 10%;
+    padding: 5px;
+    padding-bottom: 2px;
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .card-content-populaire{
