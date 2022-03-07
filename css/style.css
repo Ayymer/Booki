@@ -411,8 +411,6 @@ footer{
     background-color: #f2f2f2;
     display: flex;
     justify-content: space-evenly;
-    /* padding-left: 3%; */
-    /* padding-top: 2%; */
     font-size: 18px;
 }
 
@@ -422,8 +420,6 @@ footer h3{
 }
 
 footer ul li a{
-    font-weight: 500;
-    /* font-size: 90%; */
     text-align: left;
     text-decoration: none;
     color: black;
@@ -451,7 +447,7 @@ footer div{
 }
 
 /* responsive version moblie */
-@media all and (max-width:991px)
+@media all and (max-width:992px)
 {
     main ,header{
         width: 100%;
