@@ -276,9 +276,6 @@ header nav ul li a:hover{
     padding-inline-start: 0px;
 }
 
-.remplie{
-    color: #0065FC!important;
-}
 
 .etoiles{
     display: flex;
@@ -286,14 +283,19 @@ header nav ul li a:hover{
     flex-wrap: nowrap;
     padding: 0;
     list-style-type:none;
+    color: #F2F2F2;
 }
   
 .etoiles li {
     height: 12px;
     width: 12px;
-    margin-right: 3px;
-    color: #F2F2F2;
+    margin-right: 7px;
 }
+
+.remplie{
+    color: #0065FC;
+}
+
 
 h4{
     margin-block-start: 0;
@@ -447,7 +449,7 @@ footer div{
 }
 
 /* responsive version moblie */
-@media all and (max-width:992px)
+@media all and (max-width:768px)
 {
     main ,header{
         width: 100%;
@@ -511,7 +513,7 @@ footer div{
         padding-inline-start: 0px;
     }
 
-    header h2{
+    header h1{
         padding: 15px 0px 0px 0px;
         margin-left: 15px;
     }
@@ -668,7 +670,6 @@ footer div{
         height: 12px;
         width: 12px;
         margin-right: 6px;
-        color: #F2F2F2;
     }
 
 
@@ -730,5 +731,81 @@ footer div{
         margin: auto;
     }
 
-} 
+}
+
+
+
+/* responsive version tablette */
+@media all and (max-width:992px) and (min-width:768px)
+{
+    .card {
+        font-size: 90%;
+        width: 45%;
+        padding: 5px;
+        background-color: white;
+        border-radius: 23px;
+    }
+
+    .liste-populaire{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 150px;
+        margin-bottom: 30px;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+    
+    .card-populaire{
+        display: block;
+        font-size: 90%;
+        width: 100%;    
+        padding: 0px;
+        background-color: white;
+        margin-bottom: 0px;
+    }
+
+    
+    
+    .card-populaire a{
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: rgba(117, 117, 117, 0.2) 0px 5px 30px 0px;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+    } 
+
+    .card-photo-populaire {
+        width: 100%;
+    }
+    
+    .card-photo-populaire img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0px 0px 0px 0px;
+    }
+    
+    .card-content-populaire{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        background-color: #FFFFFF;
+    }
+    
+    .card-content-populaire p, ul{
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+}
+
+
 
